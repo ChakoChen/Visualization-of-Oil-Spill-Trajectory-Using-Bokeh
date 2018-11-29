@@ -19,7 +19,7 @@ def trajactory():
     # Convert UTC time to Newfoundland time
     df['LocalDateTime'] = pd.to_datetime(df['DateTime']).dt.tz_localize('UTC').dt.tz_convert('America/St_Johns').dt.tz_localize(None).dt.strftime('%Y-%m-%d %H:%M')
 
-    # Specify Series for ciclr plot annotations
+    # Specify Series for cicle plot annotations
     df['ScaledRadius'] = df['Radius']/10000.  # cirle size
     df['mass'] = df['Mass'].astype(str)  # circle color
 
