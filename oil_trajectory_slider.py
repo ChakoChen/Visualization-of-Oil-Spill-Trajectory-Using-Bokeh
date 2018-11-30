@@ -131,7 +131,7 @@ def myapp():
     hover = HoverTool(tooltips=[('Longitude','@x'),('Latitude','@y'),('Radius','@Radius{0.0000}'),('Thickness','@thickness{0.0000}')])
 
     #------------------------------------------------#
-    # (1.3) Add the initial circle glypf to the plot #
+    # (1.3) Add the initial circle glyph to the plot #
     #------------------------------------------------#
     # Plot a circle glyph as a background
     plot.scatter(source=BackgroundSource, x='x', y='y', radius='radius', marker='circle', alpha=0.5, fill_color='grey', line_color='white')
