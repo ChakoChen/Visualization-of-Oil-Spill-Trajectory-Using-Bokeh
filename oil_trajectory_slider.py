@@ -133,13 +133,14 @@ def myapp():
     #------------------------------------------------#
     # (1.3) Add the initial circle glyph to the plot #
     #------------------------------------------------#
-    # Plot a circle glyph as a background
+    # Plot a circle glyph of oil spill trajectory of the whole period as a background
     plot.scatter(source=BackgroundSource, x='x', y='y', radius='radius', marker='circle', alpha=0.5, fill_color='grey', line_color='white')
 
-    # Add an average path by resamping the DataFrame
+    # Add an average path of oil spill trajectory over time
     plot.line(source=LineSource, x='x', y='y', color='grey', line_width=1.5, alpha=0.8)
+    plot.circle(source=LineSource, x='x', y='y', fill_color='white', size=4)
 
-    # Add circle glyphs to the plot
+    # Add circle glyphs of updated oil distribution in time to the plot
     plot.scatter(source=source, x='x', y='y', radius='radius', marker='circle', alpha=1, fill_color='black', line_color='grey', hover_fill_color='firebrick', hover_alpha=0.5, hover_line_color='white')
 
     # Add the HoverTool to the plot
