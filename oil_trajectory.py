@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 
 
-def trajactory():
+def trajectory():
     # Import data
     df = pd.read_csv('../data/SWRX_OIL20181130.csv', delimiter=",")
 
@@ -52,7 +52,7 @@ def trajactory():
 
 
 def main():
-    trajactory()
+    trajectory()
 
 if __name__ == "__main__":
     main()
