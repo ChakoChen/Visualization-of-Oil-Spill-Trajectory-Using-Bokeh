@@ -30,7 +30,7 @@ def trajectory():
     colors = factor_cmap('mass', palette=Category20[13], factors=df['mass'].unique()) 
     legends = factor_cmap('LocalDateTime', palette=Category20[13], factors=df['DateTime'].unique())
 
-    # Add the first circle glyph to the figure p
+    # Add scatter glyph to the figure p
     p.scatter(source=df, x='Latitude', y='Longitude', marker='circle',radius='ScaledRadius', alpha=0.5, fill_color=colors, legend=legends)
 
     # Assign the legend to the bottom left: p.legend.location
